@@ -1,0 +1,1140 @@
+/*
+ Theme Name:   EarlyLux
+ Description:  A child theme of Twenty Twenty WordPress theme.
+ Author:       Beccatron Studios
+ Author URI:   https://beccatron.com
+ Template:     twentytwenty
+ Version:      2.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* -------------------------------------------------------------------------- */
+/*	CUSTOM COLORS
+/* -------------------------------------------------------------------------- */
+
+
+/* Lux Red */
+:root .has-lux-red-color { color: #aa1e1e; }
+:root .has-lux-red-background-color,
+:root .has-lux-red-background-color.has-background-dim { background-color: #ae011e; }
+
+/* Rusty Red */
+:root .has-rusty-red-color { color: #730000; }
+:root .has-rusty-red-background-color { background-color: #730000; }
+
+/* Berry */
+:root .has-berry-color { color: #d42b39; }
+:root .has-berry-background-color { background-color: #d42b39; }
+
+/* Lilac */
+:root .has-lilac-color { color: #9a55cc; }
+:root .has-lilac-background-color { background-color: #9a55cc; }
+
+/* Moss */
+:root .has-moss-color { color: #c4bf67; }
+:root .has-moss-background-color { background-color: #c4bf67; }
+
+/* Plum */
+:root .has-plum-color {color: #c38ead; }
+:root .has-plum-background-color { background-color: #c38ead; }
+
+/* Goldenrod */
+:root .has-goldenrod-color {color: #f2da65; }
+:root .has-goldenrod-background-color { background-color: #f2da65; }
+
+/* Sunshine */
+:root .has-sunshine-color {color: #F4DC4A; };
+:root .has-sunshine-background-color { background-color: #F4DC4A; }
+
+/* Latte */
+:root .has-latte-color {color: #eae1ce; }
+:root .has-latte-background-color { background-color: #eae1ce; }
+
+/* Cream  */
+:root .has-cream-color { color: #edede9; }
+:root .has-cream-background-color { background-color: #edede9; }
+
+/* White */
+:root .has-white-color { color: #FFFFFF; }
+:root .has-white-background-color { background-color: #FFFFFF; }
+
+/* Gray */
+:root .has-gray-color { color: #434343; }
+:root .has-gray-background-color { background-color: #434343; }
+
+/* Black */
+:root .has-black-color { color: #000000; }
+:root .has-black-background-color { background-color: #000000; }
+
+:root .has-subtle-background-background-color{
+	background-color: #edede9;
+}
+	
+/* -------------------------------------------------------------------------- */
+/*	Typography
+/* -------------------------------------------------------------------------- */
+
+body,
+.entry-content,
+.entry-content .wp-block-file,
+.serif{
+	font-family: sans-serif;
+}
+
+.entry-content{
+	font-size: 2.2rem;
+	line-height: 1.1538;
+}
+
+
+.entry-content p{
+	line-height: 1.3;
+	font-weight: 400;
+}
+
+.subscribe-menu,
+#site-footer,
+.toggle-text, 
+code{
+    font-family: 'authentic-sans', monospace;
+    text-transform: none;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content table,
+.entry-content address,
+.entry-content .wp-caption-text,
+.entry-content label,
+.single-article h1.entry-title,
+.single-article .dek,
+.single-article .contributors,
+.footer-copyright,
+.to-the-top{
+    font-family: 'authentic-sans-condensed', monospace;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+:root .has-drop-cap:not(:focus)::first-letter {
+	font-family: 'authentic-sans-condensed', monospace;
+	font-weight: 400;
+	color: inherit;
+
+}
+
+.entry-content .wp-block-pullquote{
+	font-family: 'authentic-sans-condensed', monospace;
+}
+
+.wp-block-pullquote blockquote p{
+	font-weight: 400;
+	   text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+
+.entry-content .wp-block-pullquote:before{
+	content: none;
+}
+
+
+h1.serif,
+h2.serif,
+h3.serif,
+h4.serif,
+h5.serif{
+		font-family: 'louize-205tf', Garamond, serif;
+
+}
+
+h1.fancy,
+h2.fancy,
+h3.fancy,
+h4.fancy,
+h5.fancy,
+.fancy{
+	font-family: "Cancellaresca-Script-Std";
+	text-transform: none;
+	font-weight: 400;
+}
+
+h2.fancy{
+	font-size: 2.5em;
+}
+h3.fancy{
+	font-size: 2em;
+}
+
+#site-footer{
+	font-size: .8em;
+}
+
+.footer-credits{
+	opacity: .6;
+}
+
+#site-footer .arrow{
+	font-size: 2em;
+	text-transform: none;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.entry-content a{
+	border-bottom: 3px solid #ae011e;
+	color: #000;
+	line-height: .9;
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
+.primary-menu li,
+.modal-menu li{
+	font-family: 'authentic-sans', monospace;
+	font-size: 2.2rem;
+	letter-spacing: .05em;
+}
+
+ul.primary-menu{
+	font-weight: 400;
+}
+
+#post-inner code,
+.post-inner code{
+	background-color: inherit;
+	font-weight: 400;
+	font-size: .85em;
+	padding: 0;
+	letter-spacing: .1em;
+}
+
+blockquote{
+	border-left: 0;
+	font-size: .85em;
+}
+
+.entry-content blockquote cite{
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: .1em;
+}
+
+blockquote cite:before{
+	/*content: '\2014';*/
+}
+
+h1.entry-title{
+	font-size: 4.8rem;
+}
+
+h2.preview-heading{
+	font-family: 'louize-205tf', Garamond, serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: .5em;
+	font-size: 2.4rem;
+	margin-top: 0rem;
+	margin-bottom: 6rem;
+	color: #aa1e1e;
+
+}
+
+
+.bulletless,
+.masthead ul{
+	list-style-type: none;
+	text-align: center;
+	
+}
+
+.bulletless li,
+.masthead li{
+	text-align: center;
+	margin-left: 0;
+}
+
+
+.masthead li,
+.masthead p,
+.wp-block-column .masthead p{
+	font-size: 1.7rem;
+}
+
+.masthead h2,
+.masthead h3{
+	font-family: 'louize-205tf', Garamond, serif;
+}
+
+.masthead h3{
+	font-size: 2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	Misc. Helper Classes
+/* -------------------------------------------------------------------------- */
+#post-inner figure.top-logo{
+	max-width: 18rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	ISSUE & FRONT COVER PAGE TEMPLATES
+ * -------------------------------------------------------------------------- */
+
+body.issue-template-default .entry-header,
+body.template-front-cover .entry-header {
+	background: transparent;
+	padding: 0;
+	top: 0;
+}
+
+.issue-template-default .cover-header-inner,
+.template-front-cover .cover-header-inner{
+	padding-top: 2rem;
+}
+
+.issue-template-default .cover-header-inner-wrapper,
+.template-front-cover .cover-header-inner-wrapper {
+	justify-content: center;
+}
+
+.cover-header .entry-header .front-cover-text *{
+	/*color: #d78cff;*/
+	/*color: #D7A0FF; */
+}
+
+.hero-text h1,
+.cover-header .entry-header .front-cover-text h1{
+	margin-bottom: 1rem;
+	font-size: 2.4rem;
+	margin-top: 0;
+	line-height: 1.2;
+	letter-spacing: .01em;
+}
+
+.template-front-cover .bg-image{
+	background-position: center top;
+}
+
+.hero-text .subhed,
+.front-cover-text .subhed{
+	font-family: 'authentic-sans', monospace;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.6rem;
+	letter-spacing: .1em;
+	margin-bottom: .8rem;
+	line-height: 1.1;
+}
+
+.hero-text .tagline,
+.front-cover-text .tagline{
+	font-size: 2.2rem;
+}
+
+.issue-template-default .post-inner,
+.template-front-cover .post-inner{
+	padding-top: 2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	ARTICLES
+ * -------------------------------------------------------------------------- */
+
+.single-article .entry-content p{
+	font-size: 2.2rem;
+}
+
+.single-article.has-post-thumbnail .entry-header-inner.section-inner.medium{
+	padding-top: 0;
+}
+
+.singular.single-article .entry-header{
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+}
+
+.single-article h1.entry-title,
+.single-article .dek,
+.single-article .contributors{
+	letter-spacing: .1em;
+
+}
+
+.single-article h1.entry-title{
+	font-size: 3.6rem;
+	font-weight: 300;
+	margin-bottom: 3rem;
+}
+
+.single-article .dek{
+	font-size: 2rem;
+	font-weight: 500;
+	max-width: 12em;
+	margin: 0 auto 3rem;
+}
+
+.single-article .contributors{
+}
+
+.single-article .contributors p{
+	margin-bottom: 0;
+}
+
+.single-article .wp-block-pullquote blockquote p,
+.single-article .wp-block-pullquote.alignleft blockquote p,
+.single-article .wp-block-pullquote.alignright blockquote p{
+	text-align: center;
+}
+
+.single-article .wp-block-pullquote blockquote p{
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: .1em;
+	line-height: 1.5;
+}
+
+.single-article .wp-block-pullquote{
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.single-article .post-inner{
+	padding-top: 2rem;
+}
+
+.single-article .entry-content h2,
+.single-article .entry-content h3,
+.single-article .entry-content h4,
+.single-article .entry-content h5{
+	font-weight: 400;
+}
+
+
+.single-article .entry-content h3{
+	font-size: 2rem;
+}
+
+/* DARK MODE */
+.dark-mode,
+.dark-mode.custom-background,
+.dark-mode #site-header,
+.dark-mode .entry-header,
+.singular.dark-mode .entry-header,
+.dark-mode .featured-media,
+.singular.dark-mode .featured-media:before,
+.dark-mode .footer-nav-widgets-wrapper,
+.dark-mode #site-footer{
+	background-color: #000;
+	color: #FFF;
+}
+
+.dark-mode a{
+	color: inherit;
+	border-color: #c84628; /* rusty red */
+}
+
+.dark-mode a:hover{
+	color: #f4dc4a;
+}
+
+body.dark-mode:not(.overlay-header) .primary-menu > li > a,
+.dark-mode.singular:not(.overlay-header) .entry-header .post-meta a{
+	color: #c84628; /* rusty red */
+}
+
+.dark-mode.single-article .dek{
+	color: #c4bf67;
+
+}
+
+.single-article .dek{
+	font-style: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	SUBSCRIBE PAGE TEMPLATE
+ * -------------------------------------------------------------------------- */
+
+
+.page-template-template-subscribe .header-navigation-wrapper{
+	display: block;
+}
+
+.page-template-template-subscribe .header-inner{
+	overflow: auto;
+	clear: both;
+}
+
+.page-template-template-subscribe .header-titles-wrapper,
+.page-template-template-subscribe .header-navigation-wrapper{
+	width: 50%;
+	padding: 0;
+	float: left;
+}
+
+.page-template-template-subscribe .header-titles-wrapper{
+	text-align: left;
+	display: block;
+}
+
+.page-template-template-subscribe .site-logo img{
+	max-height: 14rem;
+	margin-left: 0;
+}
+
+.page-template-template-subscribe .subscribe-menu{
+	text-align: right;
+	font-size: 2rem;
+	letter-spacing: .035em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	TOC PAGE TEMPLATE
+ * -------------------------------------------------------------------------- */
+.home.page-template-template-toc .entry-header{
+	display: none;
+}
+
+.template-toc p{
+	line-height: 1.2; 
+}
+
+.template-toc .wp-block-column.section-header-col{
+	flex-basis: 150px;
+}
+
+h2.toc-section{
+	font-weight: 500;
+	font-size: 1.4rem;
+	text-transform: none;
+	letter-spacing: .1em;
+	max-width: 10em;
+	padding-top: 2rem;
+	margin-right: 0;
+	color: #C84628;
+}
+
+.entry-content h2.toc-section{
+	margin-left: 0;
+	margin-bottom: 3rem;
+}
+
+
+.entry-content h2.toc-section-centered{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+
+
+
+h3.hed,
+.entry-content .wp-block-columns h3.hed{
+	font-family: 'louize-205tf', Garamond, serif;
+	text-transform: none;
+	line-height: 1.5;
+	font-size: 2.8rem;
+	display: inline;
+	margin-right: .5em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.toc-article a{
+	display: inline;
+	
+}
+
+.dek{
+	font-style: italic;
+}
+
+.byline{
+	font-family: 'authentic-sans', monospace;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	margin-bottom: 2rem; 
+}
+
+p.lede{
+	font-size: 2.2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.bigger h3.hed{
+	font-size: 3.2rem;
+}
+
+.bigger p.dek,
+.bigger p.lede{
+	font-size: 2.8rem;
+}
+
+.toc-article.bigger{
+	margin-bottom: 5rem;
+}
+
+.template-toc .entry-content .wp-block-column h2.toc-section{
+	margin-top: 1rem;
+}
+
+
+.template-toc hr.wp-block-separator{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.template-toc .wp-block-columns{
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+
+.template-toc .wp-block-columns .wp-block-columns{
+	padding: 0;
+}
+
+
+.template-toc .wp-block-columns .toc-article.alignwide{
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+
+
+.template-toc .wp-block-columns .wp-block-columns{
+	gap: 8%;
+}
+
+.toc-article,
+.wp-block-column .toc-article{
+	margin-bottom:6rem;
+	/*margin-top: 2rem;*/
+}
+
+.toc-article.aligncenter{
+	text-align: center;
+}
+
+.toc-article p.dek{
+	font-style: italic;
+}
+
+.toc-article p.dek,
+/*.toc-article h3.hed,*/
+.toc-article .article-featured-image{
+	margin-bottom: 2rem;
+	margin-top: 0;
+}
+
+.toc-article p.lede{
+	margin-bottom: 0;
+	line-height: 1.3;
+
+}
+
+.template-toc .wp-block-column{
+	margin-bottom: 0;
+}
+
+.template-toc .entry-content > .wp-block-group.alignfull.has-background{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-bottom: 4rem;
+}
+
+#post-inner .and-more code{
+	font-size: .6em;
+}
+
+p.and-more{
+	line-height: 2;
+	/*margin-top: 8rem;*/
+	/*padding-top: 2rem;
+	padding-bottom: 2rem;*/
+	/*border-top: 1px solid #aa1e1e;
+	border-bottom: 1px solid #aa1e1e;*/
+}
+
+p.wide-graf:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
+	max-width: 90rem;
+	position: relative;
+	width: calc(100% - 4rem);
+}
+
+/* -------------------------------------------------------------------------- */
+/*	Blocks
+/* -------------------------------------------------------------------------- */
+hr.wp-block-separator{
+	background-image: none;
+	border-top: 2px solid;
+}
+
+hr.wp-block-separator:before,
+hr.wp-block-separator:after{
+	content: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	Media Queries
+/* -------------------------------------------------------------------------- */
+
+
+/* Fix Cover Image Issue */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  .cover-header.bg-attachment-fixed {
+    background-attachment: scroll;
+  }
+}
+ 
+@media ( min-width: 400px ) {
+
+	.page-template-template-subscribe .subscribe-menu{
+		font-size: 2.2rem;
+	}
+	
+	.wp-block-image.is-resized.popleft:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
+		max-width: 66.66%;
+		margin-left: 2rem;
+	}
+	
+	#post-inner	figure.top-logo{
+		margin-left: 2rem;
+	}
+
+	
+	
+}
+
+
+@media ( min-width: 500px ) {
+
+	.page-template-template-subscribe .subscribe-menu{
+		font-size: 2.8rem;
+	}
+	
+	
+}
+
+
+@media ( min-width: 599px ) {
+	
+	.entry-content{
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
+	
+	.entry-header-inner.section-inner.medium{
+		/*text-align: left;*/
+	}	
+	
+	h1.entry-title{
+		font-size: 6rem;
+	}
+	
+	.singular .entry-header{
+		padding: 2rem 0 0 0;
+	}
+	
+	.wp-block-column p,
+	.wp-block-column h2{
+		font-size: .9em;
+	}
+	
+	/* Article */
+	.single-article .dek{
+		max-width: 24em;
+	}
+
+	
+	/* Templates -------------------------------- */
+
+	/* TEMPLATE: FRONT COVER */
+
+	.template-front-cover .post-inner .post-meta-wrapper,
+	.template-front-cover .post-inner .author-bio {
+		width: calc( 100% - 4rem );
+	}
+	
+	.hero-text h1,
+	.cover-header .entry-header .front-cover-text h1{
+		font-size: 3rem;
+		margin-bottom: 1.2rem; 
+	}
+
+	.hero-text .subhed,
+	.front-cover-text .subhed{
+		font-size: 1.8rem;
+		margin-bottom: .8rem;
+	}
+
+	.hero-text .tagline,
+	.front-cover-text .tagline{
+		font-size: 2.8rem;
+	}
+
+	/* TEMPLATE: SUBSCRIBE PAGE */
+
+	.page-template-template-subscribe .entry-content{
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
+	
+	.page-template-template-subscribe .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+	.page-template-template-subscribe .section-inner{
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+	
+	.page-template-template-subscribe .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
+		max-width: 83rem;
+		width: calc(100% - 8rem);
+	}
+	
+	.page-template-template-subscribe .section-inner{
+		width: calc(100% - 8rem);
+	}
+	
+
+	.page-template-template-subscribe .subscribe-menu{
+		font-size: 3rem;
+	}
+	
+	.page-template-template-subscribe .site-logo img{
+		max-height: 18rem;
+	}
+	
+	
+	h2.preview-heading{
+		font-size: 2.8rem;
+	}
+	
+
+}
+
+@media ( min-width: 650px ) {
+	
+	.page-template-template-subscribe .subscribe-menu{
+		font-size: 4rem;
+	}
+	
+}
+
+@media ( min-width: 700px ) {
+
+	.singular .entry-header{
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+	
+		
+	.entry-header-inner.section-inner.medium{
+		max-width: calc(100vw - 8rem);
+		width: calc(100vw - 8rem);
+	}	
+		
+	
+	h1.entry-title{
+		font-size: 7rem;
+	}
+	
+	.single-article h1.entry-title{
+		font-size: 5rem;
+	}
+	
+	.singular .entry-header{
+		padding: 3rem 0 0 0;
+	}
+	
+	.wp-block-column p,
+	.wp-block-column h2{
+		font-size: .9em;
+	}
+	
+	.post-inner{
+		padding-top: 6rem;
+	}
+	
+	
+	
+
+}
+
+@media ( min-width: 800px ) {
+	
+	.page-template-template-subscribe .subscribe-menu{
+		font-size: 4.6rem;
+	}
+	
+	/* Article */
+	.single-article .dek{
+		max-width: 100%;
+		font-size: 2.4rem;
+	}
+	
+	/* TEMPLATE: FRONT COVER */
+	
+	.hero-text h1,
+	.cover-header .entry-header .front-cover-text h1{
+		font-size: 4rem;
+		margin-bottom: 2rem; 
+	}
+
+	.hero-text .subhed,
+	.front-cover-text .subhed{
+		/*font-size: 2.2rem;
+		margin-bottom: 1.8rem;*/
+	}
+	
+	.hero-text .tagline,
+	.front-cover-text .tagline{
+		font-size: 3.8rem;
+	}
+	
+	/* TOC PAGE TEMPLATE
+	-------------------------------------------------------------------------- */
+
+	.toc-article.cutout{
+		display: block;
+		position: relative;
+		margin-bottom: 9rem;
+	}
+
+	.toc-article.cutout .toc-article-text{
+			width: calc(50% - 24px);
+			position: absolute;
+			right: calc(-5% + 16px);
+			bottom: -6rem;
+			background-color: #FFF;
+			padding-left: 24px;
+			border-left: 2px solid #C84628;
+			border-top: 2px solid #C84628;
+	}
+
+	.toc-article.cutout .toc-article-text h3.hed{
+		margin-top: 16px;
+	}
+
+
+	.wp-block-column.after-cutout{
+		margin-top: -4rem;
+	}
+	
+	h2.preview-heading{
+		font-size: 3.2rem;
+	}
+	
+
+
+}
+	
+
+@media ( min-width: 1000px ) {
+
+	.entry-header-inner.section-inner.medium,
+	.header-inner{
+		max-width: calc(100vw - 12rem);
+		width: calc(100vw - 12rem);
+	}	
+	
+	.template-left-aligned .entry-header-inner.section-inner.medium,
+	.template-left-aligned .header-inner{
+		text-align: left;
+	}
+	
+	.template-front-cover .entry-header-inner.section-inner.medium{
+		text-align: center;
+	}
+	
+	.entry-header-inner.section-inner.medium{
+		padding-top: 4rem;
+	}	
+	
+	h1.entry-title{
+		font-size: 8rem;
+	}
+	
+	.singular .entry-header{
+		padding: 3rem 0 0 0;
+	}
+	
+	.wp-block-column p,
+	.wp-block-column h2{
+		font-size: inherit;
+	}
+	
+
+	hr.wp-block-separator{
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+	}
+	
+	
+
+	
+	/* SUBSCRIBE PAGE TEMPLATE
+	-------------------------------------------------------------------------- */
+
+	.page-template-template-subscribe .header-inner{
+		display: block;
+		padding-top: 4rem;
+	}
+	
+	.page-template-template-subscribe .site-logo img{
+		margin-bottom: 2rem;
+	}
+	
+	.page-template-template-subscribe .header-navigation-menu,
+	.page-template-template-subscribe .header-titles-wrapper{
+		width: calc(50% - 4rem);
+	}
+	
+	.page-template-template-subscribe .header-navigation-menu {
+		right: 0;
+		position: relative;
+		float: none;
+	}
+	
+	.page-template-template-subscribe .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+	.page-template-template-subscribe .section-inner{
+		margin-left: 6rem;
+		margin-right: 6rem;
+		width: calc(100% - 12rem);
+	}
+	
+	.page-template-template-subscribe .subscribe-menu{
+		font-size: 5rem;
+	}
+	
+
+	/* ALIGNMENTS
+	-------------------------------------------------------------------------- */
+	.entry-content > .alignwide{
+		max-width: calc(100vw - 12rem);
+		width: calc(100vw - 12rem);
+	}
+	
+
+	.wp-block-image.is-resized.popleft:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
+		max-width: 33.33%;
+		margin-left: 4rem;
+	}
+	
+	#post-inner	figure.top-logo{
+		margin-left: 4rem;
+		max-width: 24rem;
+
+	}
+
+
+		
+	/* Alignments */
+	.bump-right{
+		margin-right: -4rem;
+	}
+	
+	.bump-left{
+		margin-left: -4rem;
+	}
+	
+	.wp-block-media-text.bump-right{
+		grid-template-columns: 60% 1fr;
+	}
+	.wp-block-media-text.bump-left.has-media-on-the-right{
+		grid-template-columns: 1fr 60%;
+	}
+	
+	.wp-block-media-text{
+		grid-column-gap: 2rem;
+	}
+
+
+}
+
+@media ( min-width: 1200px ) {
+
+/* ALIGNMENTS
+	-------------------------------------------------------------------------- */
+	
+
+	.entry-content > .alignwide,
+	.entry-header-inner.section-inner.medium,
+	.header-inner{
+		max-width: calc(100vw - 16rem);
+		width: calc(100vw - 16rem);
+	}
+	
+
+	.wp-block-image.is-resized.popleft:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
+		max-width: 33.33%;
+		margin-left: 6rem;
+	}
+	
+	#post-inner	figure.top-logo{
+		margin-left: 6rem;
+	}
+	
+	
+	.bump-right{
+		margin-right: -6rem;
+	}
+	
+	.bump-left{
+		margin-left: -6rem;
+	}
+	
+	
+	
+}
+
+@media ( min-width: 1280px ) {
+
+	/* Article */
+	
+	.single-article .contributors{
+		display: block;
+		position: absolute;
+		right: calc(33rem + 50vw);
+		width: calc((100% - 58rem) / 2 - 6rem);
+		text-align: left;
+		margin-left: -31rem;
+		max-width: 29rem;
+		padding-top: 6.2rem;
+	}
+	
+	.single-article .contributors p{
+		max-width: 15rem;
+		margin-bottom: 6rem;
+		font-size: 2.2rem;
+	}
+	
+	.single-article .contributors p .role{
+		display: block;
+	}
+}
